@@ -1,0 +1,8 @@
+<h3>Placeholders</h3>
+<div class="placeholders">
+  <app-placeholder *ngFor="let placeholder of placeholders$ | async" [placeholder]="placeholder"></app-placeholder>
+</div>
+
+<button (click)="addPlaceholder()">Add Placeholder</button>
+
+<hr>
